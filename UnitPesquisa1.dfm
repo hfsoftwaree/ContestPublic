@@ -1,0 +1,772 @@
+object frmPesquisa1: TfrmPesquisa1
+  Tag = 9
+  Left = 203
+  Top = 58
+  Width = 465
+  Height = 446
+  AutoSize = True
+  BorderIcons = []
+  Caption = 'Pesquisa'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 457
+    Height = 412
+    Align = alClient
+    TabOrder = 0
+    object Bevel1: TBevel
+      Left = 8
+      Top = 344
+      Width = 441
+      Height = 9
+      Shape = bsBottomLine
+    end
+    object GroupBox1: TGroupBox
+      Left = 8
+      Top = 0
+      Width = 441
+      Height = 57
+      Caption = 'Entre com o per'#237'odo para pesquisa e clique em "RELACIONAR"'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      object Label3: TLabel
+        Left = 216
+        Top = 14
+        Width = 19
+        Height = 13
+        Caption = 'Ano'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 64
+        Top = 14
+        Width = 20
+        Height = 13
+        Caption = 'M'#234's'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label1: TLabel
+        Left = 8
+        Top = 14
+        Width = 16
+        Height = 13
+        Caption = 'Dia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object BitBtn3: TBitBtn
+        Left = 304
+        Top = 16
+        Width = 129
+        Height = 33
+        Caption = 'R&elacionar'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+        OnClick = BitBtn3Click
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000130B0000130B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+          333333333333333FF3FF3333333333CC30003333333333773777333333333C33
+          3000333FF33337F33777339933333C3333333377F33337F3333F339933333C33
+          33003377333337F33377333333333C333300333F333337F33377339333333C33
+          3333337FF3333733333F33993333C33333003377FF33733333773339933C3333
+          330033377FF73F33337733339933C33333333FF377F373F3333F993399333C33
+          330077F377F337F33377993399333C33330077FF773337F33377399993333C33
+          33333777733337F333FF333333333C33300033333333373FF7773333333333CC
+          3000333333333377377733333333333333333333333333333333}
+        NumGlyphs = 2
+      end
+      object DBComboBox1: TComboBox
+        Left = 8
+        Top = 32
+        Width = 49
+        Height = 21
+        AutoDropDown = True
+        BevelKind = bkTile
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ParentFont = False
+        Sorted = True
+        TabOrder = 0
+        Items.Strings = (
+          '01'
+          '02'
+          '03'
+          '04'
+          '05'
+          '06'
+          '07'
+          '08'
+          '09'
+          '10'
+          '11'
+          '12'
+          '13'
+          '14'
+          '15'
+          '16'
+          '17'
+          '18'
+          '19'
+          '20'
+          '21'
+          '22'
+          '23'
+          '24'
+          '25'
+          '26'
+          '27'
+          '28'
+          '29'
+          '30'
+          '31')
+      end
+      object DBComboBox2: TComboBox
+        Left = 64
+        Top = 32
+        Width = 145
+        Height = 21
+        AutoDropDown = True
+        BevelKind = bkTile
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ParentFont = False
+        TabOrder = 1
+        Items.Strings = (
+          'JANEIRO'
+          'FEVEREIRO'
+          'MARCO'
+          'ABRIL'
+          'MAIO'
+          'JUNHO'
+          'JULHO'
+          'AGOSTO'
+          'SETEMBRO'
+          'OUTUBRO'
+          'NOVEMBRO'
+          'DEZEMBRO')
+      end
+      object DBComboBox3: TComboBox
+        Left = 216
+        Top = 32
+        Width = 81
+        Height = 21
+        AutoDropDown = True
+        BevelKind = bkTile
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ParentFont = False
+        Sorted = True
+        TabOrder = 2
+        Items.Strings = (
+          '1999'
+          '2000'
+          '2001'
+          '2002'
+          '2003'
+          '2004'
+          '2005'
+          '2006'
+          '2008'
+          '2009'
+          '2010'
+          '2011'
+          '2012'
+          '2013'
+          '2014'
+          '2015'
+          '2016'
+          '2017'
+          '2018'
+          '2019'
+          '2020'
+          '2021'
+          '2022'
+          '2023'
+          '2024'
+          '2025'
+          '2026'
+          '2027'
+          '2028'
+          '2029'
+          '2030'
+          '2031'
+          '2032'
+          '2033'
+          '2034'
+          '2035'
+          '2036'
+          '2037'
+          '2038'
+          '2039'
+          '2040'
+          '2041'
+          '2042'
+          '2043'
+          '2044'
+          '2045'
+          '2046'
+          '2047'
+          '2048'
+          '2049'
+          '2050')
+      end
+    end
+    object DBGrid1: TDBGrid
+      Left = 8
+      Top = 72
+      Width = 441
+      Height = 265
+      Hint = 
+        'Selecione o fornecedor desejado e tecle "ENTER" ou clique em "CO' +
+        'NFIRMAR".'
+      TabStop = False
+      DataSource = DataSource1
+      Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+      OnKeyPress = DBGrid1KeyPress
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'CODIGOPRODUCAO'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clRed
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          Title.Alignment = taCenter
+          Title.Caption = 'Lancto'
+          Width = 50
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'ESSENCIA'
+          Title.Alignment = taCenter
+          Title.Caption = 'Ess'#234'ncia'
+          Width = 212
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'QUANTIDADE'
+          Title.Alignment = taCenter
+          Title.Caption = 'Quantidade'
+          Width = 66
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'COMPRIMENTO'
+          Title.Alignment = taCenter
+          Title.Caption = 'Comprimento'
+          Width = 75
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'LARGURA'
+          Title.Alignment = taCenter
+          Title.Caption = 'Largura'
+          Width = 66
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'EXPESSURA'
+          Title.Alignment = taCenter
+          Title.Caption = 'Expessura'
+          Width = 66
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'TOTAL'
+          Title.Alignment = taCenter
+          Title.Caption = 'Total (M/3)'
+          Width = 73
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'COLA'
+          Title.Alignment = taCenter
+          Title.Caption = 'C'#243'la'
+          Width = 66
+          Visible = True
+        end>
+    end
+    object BitBtn1: TBitBtn
+      Left = 256
+      Top = 360
+      Width = 97
+      Height = 45
+      Cursor = crHandPoint
+      Caption = '&Confirmar'
+      Enabled = False
+      ModalResult = 6
+      TabOrder = 2
+      TabStop = False
+      OnClick = BitBtn1Click
+      Glyph.Data = {
+        DE010000424DDE01000000000000760000002800000024000000120000000100
+        0400000000006801000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333330000333333333333333333333333F33333333333
+        00003333344333333333333333388F3333333333000033334224333333333333
+        338338F3333333330000333422224333333333333833338F3333333300003342
+        222224333333333383333338F3333333000034222A22224333333338F338F333
+        8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+        33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+        0000333333333A222433333333333338F338F33300003333333333A222433333
+        333333338F338F33000033333333333A222433333333333338F338F300003333
+        33333333A222433333333333338F338F00003333333333333A22433333333333
+        3338F38F000033333333333333A223333333333333338F830000333333333333
+        333A333333333333333338330000333333333333333333333333333333333333
+        0000}
+      Layout = blGlyphTop
+      NumGlyphs = 2
+    end
+    object BitBtn2: TBitBtn
+      Left = 352
+      Top = 360
+      Width = 97
+      Height = 45
+      Cursor = crHandPoint
+      Cancel = True
+      Caption = '&Retornar'
+      TabOrder = 3
+      TabStop = False
+      OnClick = BitBtn2Click
+      Glyph.Data = {
+        F6000000424DF600000000000000760000002800000010000000100000000100
+        04000000000080000000C40E0000C40E00001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0077FF77FF700F
+        77FFFF77FF77F0B0FF7777FF77FF70B307FF00000007F0B330007777770000B3
+        307777770708800330777777000880F03077777702088003307700000A2080B3
+        3077AAAAAAA200B3307700000AA080B3307777770A0880B330777777000880BB
+        307777770708880BB077777777088880B0777777770000000077}
+      Layout = blGlyphTop
+    end
+    object GroupBox2: TGroupBox
+      Left = 10
+      Top = 356
+      Width = 207
+      Height = 48
+      Caption = '&Ordena'#231#227'o'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      object ComboBox1: TComboBox
+        Left = 8
+        Top = 18
+        Width = 185
+        Height = 21
+        BevelKind = bkTile
+        Style = csDropDownList
+        CharCase = ecUpperCase
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ItemIndex = 0
+        ParentFont = False
+        Sorted = True
+        TabOrder = 0
+        TabStop = False
+        Text = 'C'#211'DIGO'
+        OnChange = ComboBox1Change
+        Items.Strings = (
+          'C'#211'DIGO'
+          'ESS'#202'NCIA')
+      end
+    end
+    object Panel2: TPanel
+      Left = 8
+      Top = 56
+      Width = 441
+      Height = 17
+      BevelInner = bvRaised
+      BevelOuter = bvNone
+      Caption = '0'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+    end
+    object TOTAL: TEvDBNumEdit
+      Left = 8
+      Top = 336
+      Width = 121
+      Height = 21
+      AutoHideCalculator = False
+      DataField = 'TOTAL'
+      DataSource = DataSource1
+      Decimals = 3
+      Glyph.Data = {
+        7E050000424D7E0500000000000036000000280000001A0000000D0000000100
+        2000000000004805000000000000000000000000000000000000FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF009A6A39009767360093643400906131008C5E2F00895B
+        2C0085582A00825527007F522500FF00FF00FF00FF00FF00FF00FF00FF008585
+        8500828282007F7F7F007D7D7D007A7A7A007777770075757500727272006F6F
+        6F00FF00FF00FF00FF00FF00FF00FF00FF009F6E3C00E3947600DC8B6A00D682
+        5E00D07A5300CB724900C66B3F00C66B3F0082552700FF00FF00FF00FF00FF00
+        FF00FF00FF0089898900B1B1B100A9A9A900A1A1A10099999900929292008B8B
+        8B008B8B8B0072727200FF00FF00FF00FF00FF00FF00FF00FF00A2713E00FFFF
+        FF00D0A08000FFFFFF00D0A08000FFFFFF00D0A08000E9D7C30085582A00FF00
+        FF00FF00FF00FF00FF00FF00FF008B8B8B00FFFFFF00B7B7B700FFFFFF00B7B7
+        B700FFFFFF00B7B7B700E0E0E00075757500FF00FF00FF00FF00FF00FF00FF00
+        FF00A5734000E3947600DC8B6A00D6825E00D07A5300CB724900C66B3F00C66B
+        3F00895B2C00FF00FF00FF00FF00FF00FF00FF00FF008D8D8D00B1B1B100A9A9
+        A900A1A1A10099999900929292008B8B8B008B8B8B0077777700FF00FF00FF00
+        FF00FF00FF00FF00FF00A8764200FFFFFF00D0A08000FFFFFF00D0A08000FFFF
+        FF00D0A08000E9D7C3008C5E2F00FF00FF00FF00FF00FF00FF00FF00FF008F8F
+        8F00FFFFFF00B7B7B700FFFFFF00B7B7B700FFFFFF00B7B7B700E0E0E0007A7A
+        7A00FF00FF00FF00FF00FF00FF00FF00FF00AB794400E3947600DC8B6A00D682
+        5E00D07A5300CB724900C66B3F00C66B3F0090613100FF00FF00FF00FF00FF00
+        FF00FF00FF0092929200B1B1B100A9A9A900A1A1A10099999900929292008B8B
+        8B008B8B8B007D7D7D00FF00FF00FF00FF00FF00FF00FF00FF00AE7B4600FFFF
+        FF00D0A08000FFFFFF00D0A08000FFFFFF00D0A08000E9D7C30093643400FF00
+        FF00FF00FF00FF00FF00FF00FF0093939300FFFFFF00B7B7B700FFFFFF00B7B7
+        B700FFFFFF00B7B7B700E0E0E0007F7F7F00FF00FF00FF00FF00FF00FF00FF00
+        FF00B17E4800E3947600DC8B6A00D6825E00D07A5300CB724900C66B3F00C66B
+        3F0097673600FF00FF00FF00FF00FF00FF00FF00FF0096969600B1B1B100A9A9
+        A900A1A1A10099999900929292008B8B8B008B8B8B0082828200FF00FF00FF00
+        FF00FF00FF00FF00FF00B4814A00FFF9F900FFF3F300FFEDED00FFE7E700FFDC
+        DC00FFD0D000FFD0D0009A6A3900FF00FF00FF00FF00FF00FF00FF00FF009999
+        9900FBFBFB00F8F8F800F4F4F400F0F0F000E9E9E900E2E2E200E2E2E2008585
+        8500FF00FF00FF00FF00FF00FF00FF00FF00B9854E00FFFFFF00FFF9F900FFF3
+        F300FFEDED00FFE7E700FFDCDC00FFDCDC009F6E3C00FF00FF00FF00FF00FF00
+        FF00FF00FF009C9C9C00FFFFFF00FBFBFB00F8F8F800F4F4F400F0F0F000E9E9
+        E900E9E9E90089898900FF00FF00FF00FF00FF00FF00FF00FF00BC875000B985
+        4E00B4814A00B17E4800AE7B4600AB794400A8764200A5734000A2713E00FF00
+        FF00FF00FF00FF00FF00FF00FF009E9E9E009C9C9C0099999900969696009393
+        9300929292008F8F8F008D8D8D008B8B8B00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00}
+      TabOrder = 6
+      Visible = False
+    end
+    object TPRODUCAO: TEvDBNumEdit
+      Left = 152
+      Top = 336
+      Width = 121
+      Height = 21
+      AutoHideCalculator = False
+      DataField = 'TPRODUCAO'
+      DataSource = DM.DEssencia
+      Decimals = 3
+      Glyph.Data = {
+        7E050000424D7E0500000000000036000000280000001A0000000D0000000100
+        2000000000004805000000000000000000000000000000000000FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF009A6A39009767360093643400906131008C5E2F00895B
+        2C0085582A00825527007F522500FF00FF00FF00FF00FF00FF00FF00FF008585
+        8500828282007F7F7F007D7D7D007A7A7A007777770075757500727272006F6F
+        6F00FF00FF00FF00FF00FF00FF00FF00FF009F6E3C00E3947600DC8B6A00D682
+        5E00D07A5300CB724900C66B3F00C66B3F0082552700FF00FF00FF00FF00FF00
+        FF00FF00FF0089898900B1B1B100A9A9A900A1A1A10099999900929292008B8B
+        8B008B8B8B0072727200FF00FF00FF00FF00FF00FF00FF00FF00A2713E00FFFF
+        FF00D0A08000FFFFFF00D0A08000FFFFFF00D0A08000E9D7C30085582A00FF00
+        FF00FF00FF00FF00FF00FF00FF008B8B8B00FFFFFF00B7B7B700FFFFFF00B7B7
+        B700FFFFFF00B7B7B700E0E0E00075757500FF00FF00FF00FF00FF00FF00FF00
+        FF00A5734000E3947600DC8B6A00D6825E00D07A5300CB724900C66B3F00C66B
+        3F00895B2C00FF00FF00FF00FF00FF00FF00FF00FF008D8D8D00B1B1B100A9A9
+        A900A1A1A10099999900929292008B8B8B008B8B8B0077777700FF00FF00FF00
+        FF00FF00FF00FF00FF00A8764200FFFFFF00D0A08000FFFFFF00D0A08000FFFF
+        FF00D0A08000E9D7C3008C5E2F00FF00FF00FF00FF00FF00FF00FF00FF008F8F
+        8F00FFFFFF00B7B7B700FFFFFF00B7B7B700FFFFFF00B7B7B700E0E0E0007A7A
+        7A00FF00FF00FF00FF00FF00FF00FF00FF00AB794400E3947600DC8B6A00D682
+        5E00D07A5300CB724900C66B3F00C66B3F0090613100FF00FF00FF00FF00FF00
+        FF00FF00FF0092929200B1B1B100A9A9A900A1A1A10099999900929292008B8B
+        8B008B8B8B007D7D7D00FF00FF00FF00FF00FF00FF00FF00FF00AE7B4600FFFF
+        FF00D0A08000FFFFFF00D0A08000FFFFFF00D0A08000E9D7C30093643400FF00
+        FF00FF00FF00FF00FF00FF00FF0093939300FFFFFF00B7B7B700FFFFFF00B7B7
+        B700FFFFFF00B7B7B700E0E0E0007F7F7F00FF00FF00FF00FF00FF00FF00FF00
+        FF00B17E4800E3947600DC8B6A00D6825E00D07A5300CB724900C66B3F00C66B
+        3F0097673600FF00FF00FF00FF00FF00FF00FF00FF0096969600B1B1B100A9A9
+        A900A1A1A10099999900929292008B8B8B008B8B8B0082828200FF00FF00FF00
+        FF00FF00FF00FF00FF00B4814A00FFF9F900FFF3F300FFEDED00FFE7E700FFDC
+        DC00FFD0D000FFD0D0009A6A3900FF00FF00FF00FF00FF00FF00FF00FF009999
+        9900FBFBFB00F8F8F800F4F4F400F0F0F000E9E9E900E2E2E200E2E2E2008585
+        8500FF00FF00FF00FF00FF00FF00FF00FF00B9854E00FFFFFF00FFF9F900FFF3
+        F300FFEDED00FFE7E700FFDCDC00FFDCDC009F6E3C00FF00FF00FF00FF00FF00
+        FF00FF00FF009C9C9C00FFFFFF00FBFBFB00F8F8F800F4F4F400F0F0F000E9E9
+        E900E9E9E90089898900FF00FF00FF00FF00FF00FF00FF00FF00BC875000B985
+        4E00B4814A00B17E4800AE7B4600AB794400A8764200A5734000A2713E00FF00
+        FF00FF00FF00FF00FF00FF00FF009E9E9E009C9C9C0099999900969696009393
+        9300929292008F8F8F008D8D8D008B8B8B00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00}
+      TabOrder = 7
+      Visible = False
+    end
+    object EENTRADAS: TEvDBNumEdit
+      Left = 280
+      Top = 336
+      Width = 121
+      Height = 21
+      AutoHideCalculator = False
+      DataField = 'EENTRADAS'
+      DataSource = DM.DEssencia
+      Decimals = 3
+      Glyph.Data = {
+        7E050000424D7E0500000000000036000000280000001A0000000D0000000100
+        2000000000004805000000000000000000000000000000000000FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF009A6A39009767360093643400906131008C5E2F00895B
+        2C0085582A00825527007F522500FF00FF00FF00FF00FF00FF00FF00FF008585
+        8500828282007F7F7F007D7D7D007A7A7A007777770075757500727272006F6F
+        6F00FF00FF00FF00FF00FF00FF00FF00FF009F6E3C00E3947600DC8B6A00D682
+        5E00D07A5300CB724900C66B3F00C66B3F0082552700FF00FF00FF00FF00FF00
+        FF00FF00FF0089898900B1B1B100A9A9A900A1A1A10099999900929292008B8B
+        8B008B8B8B0072727200FF00FF00FF00FF00FF00FF00FF00FF00A2713E00FFFF
+        FF00D0A08000FFFFFF00D0A08000FFFFFF00D0A08000E9D7C30085582A00FF00
+        FF00FF00FF00FF00FF00FF00FF008B8B8B00FFFFFF00B7B7B700FFFFFF00B7B7
+        B700FFFFFF00B7B7B700E0E0E00075757500FF00FF00FF00FF00FF00FF00FF00
+        FF00A5734000E3947600DC8B6A00D6825E00D07A5300CB724900C66B3F00C66B
+        3F00895B2C00FF00FF00FF00FF00FF00FF00FF00FF008D8D8D00B1B1B100A9A9
+        A900A1A1A10099999900929292008B8B8B008B8B8B0077777700FF00FF00FF00
+        FF00FF00FF00FF00FF00A8764200FFFFFF00D0A08000FFFFFF00D0A08000FFFF
+        FF00D0A08000E9D7C3008C5E2F00FF00FF00FF00FF00FF00FF00FF00FF008F8F
+        8F00FFFFFF00B7B7B700FFFFFF00B7B7B700FFFFFF00B7B7B700E0E0E0007A7A
+        7A00FF00FF00FF00FF00FF00FF00FF00FF00AB794400E3947600DC8B6A00D682
+        5E00D07A5300CB724900C66B3F00C66B3F0090613100FF00FF00FF00FF00FF00
+        FF00FF00FF0092929200B1B1B100A9A9A900A1A1A10099999900929292008B8B
+        8B008B8B8B007D7D7D00FF00FF00FF00FF00FF00FF00FF00FF00AE7B4600FFFF
+        FF00D0A08000FFFFFF00D0A08000FFFFFF00D0A08000E9D7C30093643400FF00
+        FF00FF00FF00FF00FF00FF00FF0093939300FFFFFF00B7B7B700FFFFFF00B7B7
+        B700FFFFFF00B7B7B700E0E0E0007F7F7F00FF00FF00FF00FF00FF00FF00FF00
+        FF00B17E4800E3947600DC8B6A00D6825E00D07A5300CB724900C66B3F00C66B
+        3F0097673600FF00FF00FF00FF00FF00FF00FF00FF0096969600B1B1B100A9A9
+        A900A1A1A10099999900929292008B8B8B008B8B8B0082828200FF00FF00FF00
+        FF00FF00FF00FF00FF00B4814A00FFF9F900FFF3F300FFEDED00FFE7E700FFDC
+        DC00FFD0D000FFD0D0009A6A3900FF00FF00FF00FF00FF00FF00FF00FF009999
+        9900FBFBFB00F8F8F800F4F4F400F0F0F000E9E9E900E2E2E200E2E2E2008585
+        8500FF00FF00FF00FF00FF00FF00FF00FF00B9854E00FFFFFF00FFF9F900FFF3
+        F300FFEDED00FFE7E700FFDCDC00FFDCDC009F6E3C00FF00FF00FF00FF00FF00
+        FF00FF00FF009C9C9C00FFFFFF00FBFBFB00F8F8F800F4F4F400F0F0F000E9E9
+        E900E9E9E90089898900FF00FF00FF00FF00FF00FF00FF00FF00BC875000B985
+        4E00B4814A00B17E4800AE7B4600AB794400A8764200A5734000A2713E00FF00
+        FF00FF00FF00FF00FF00FF00FF009E9E9E009C9C9C0099999900969696009393
+        9300929292008F8F8F008D8D8D008B8B8B00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00}
+      TabOrder = 8
+      Visible = False
+    end
+  end
+  object QProducao: TIBTable
+    Database = DM.IBDatabase1
+    Transaction = DM.IBTransaction1
+    BufferChunks = 1000
+    CachedUpdates = False
+    FieldDefs = <
+      item
+        Name = 'CODIGOPRODUCAO'
+        Attributes = [faRequired]
+        DataType = ftInteger
+      end
+      item
+        Name = 'DIA'
+        DataType = ftString
+        Size = 2
+      end
+      item
+        Name = 'MES'
+        DataType = ftString
+        Size = 30
+      end
+      item
+        Name = 'ANO'
+        DataType = ftString
+        Size = 4
+      end
+      item
+        Name = 'ESSENCIA'
+        DataType = ftString
+        Size = 30
+      end
+      item
+        Name = 'QUANTIDADE'
+        DataType = ftFloat
+      end
+      item
+        Name = 'COMPRIMENTO'
+        DataType = ftFloat
+      end
+      item
+        Name = 'LARGURA'
+        DataType = ftFloat
+      end
+      item
+        Name = 'EXPESSURA'
+        DataType = ftFloat
+      end
+      item
+        Name = 'TOTAL'
+        DataType = ftFloat
+      end
+      item
+        Name = 'COLA'
+        DataType = ftFloat
+      end
+      item
+        Name = 'CODIGOESSENCIA'
+        DataType = ftString
+        Size = 10
+      end>
+    IndexDefs = <
+      item
+        Name = 'IND_ANO'
+        Fields = 'ANO'
+      end
+      item
+        Name = 'IND_DIA'
+        Fields = 'DIA'
+      end
+      item
+        Name = 'IND_MES'
+        Fields = 'MES'
+      end
+      item
+        Name = 'RDB$PRIMARY4'
+        Fields = 'CODIGOPRODUCAO'
+        Options = [ixPrimary, ixUnique]
+      end>
+    StoreDefs = True
+    TableName = 'PRODUCAO_CHAPA'
+    Left = 184
+    Top = 192
+    object QProducaoCODIGOPRODUCAO: TIntegerField
+      FieldName = 'CODIGOPRODUCAO'
+    end
+    object QProducaoDIA: TIBStringField
+      FieldName = 'DIA'
+      Size = 2
+    end
+    object QProducaoMES: TIBStringField
+      FieldName = 'MES'
+      Size = 30
+    end
+    object QProducaoANO: TIBStringField
+      FieldName = 'ANO'
+      Size = 4
+    end
+    object QProducaoESSENCIA: TIBStringField
+      FieldName = 'ESSENCIA'
+      Size = 30
+    end
+    object QProducaoQUANTIDADE: TFloatField
+      FieldName = 'QUANTIDADE'
+      DisplayFormat = '###,#0.000'
+    end
+    object QProducaoCOMPRIMENTO: TFloatField
+      FieldName = 'COMPRIMENTO'
+      DisplayFormat = '###,#0.00'
+    end
+    object QProducaoLARGURA: TFloatField
+      FieldName = 'LARGURA'
+      DisplayFormat = '###,#0.00'
+    end
+    object QProducaoEXPESSURA: TFloatField
+      FieldName = 'EXPESSURA'
+      DisplayFormat = '###,#0.00'
+    end
+    object QProducaoTOTAL: TFloatField
+      FieldName = 'TOTAL'
+      DisplayFormat = '###,#0.000'
+    end
+    object QProducaoCOLA: TFloatField
+      FieldName = 'COLA'
+      DisplayFormat = '###,#0.000'
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = QProducao
+    Left = 152
+    Top = 192
+  end
+end

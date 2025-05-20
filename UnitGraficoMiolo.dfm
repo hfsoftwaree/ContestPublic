@@ -1,0 +1,159 @@
+object frmGraficoMiolo: TfrmGraficoMiolo
+  Left = 203
+  Top = 212
+  Width = 472
+  Height = 190
+  BorderIcons = [biMaximize]
+  Caption = 'Gera'#231#227'o de Gr'#225'fico'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 464
+    Height = 156
+    Align = alClient
+    TabOrder = 0
+    object Bevel1: TBevel
+      Left = 8
+      Top = 88
+      Width = 449
+      Height = 9
+      Shape = bsBottomLine
+    end
+    object BitBtn1: TBitBtn
+      Left = 296
+      Top = 104
+      Width = 80
+      Height = 40
+      Cursor = crHandPoint
+      Hint = 'Vizualiza Relat'#243'rio com os crit'#233'rios informados'
+      Caption = '&Vizualizar'
+      TabOrder = 0
+      TabStop = False
+      OnClick = BitBtn1Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333300030003
+        0003333377737773777333333333333333333FFFFFFFFFFFFFFF770000000000
+        0000777777777777777733039993BBB3CCC3337F737F737F737F37039993BBB3
+        CCC3377F737F737F737F33039993BBB3CCC33F7F737F737F737F77079997BBB7
+        CCC77777737773777377330399930003CCC3337F737F7773737F370399933333
+        CCC3377F737F3333737F330399933333CCC33F7F737FFFFF737F770700077777
+        CCC77777777777777377330333333333CCC3337F33333333737F370333333333
+        0003377F33333333777333033333333333333F7FFFFFFFFFFFFF770777777777
+        7777777777777777777733333333333333333333333333333333}
+      NumGlyphs = 2
+    end
+    object BitBtn3: TBitBtn
+      Left = 376
+      Top = 104
+      Width = 80
+      Height = 40
+      Cursor = crHandPoint
+      Hint = 'Fecha formulario'
+      Caption = '&Retornar'
+      TabOrder = 1
+      TabStop = False
+      OnClick = BitBtn3Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        33333333333333333333333333333333333333333333333333FF333333333333
+        3000333333FFFFF3F77733333000003000B033333777773777F733330BFBFB00
+        E00033337FFF3377F7773333000FBFB0E000333377733337F7773330FBFBFBF0
+        E00033F7FFFF3337F7773000000FBFB0E000377777733337F7770BFBFBFBFBF0
+        E00073FFFFFFFF37F777300000000FB0E000377777777337F7773333330BFB00
+        000033333373FF77777733333330003333333333333777333333333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333}
+      NumGlyphs = 2
+    end
+    object GroupBox1: TGroupBox
+      Left = 8
+      Top = 8
+      Width = 449
+      Height = 73
+      Caption = 
+        'Fornecedor (Pressione a tecla "ALT + P" para pesquisar Fornecedo' +
+        'r)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      object DBLookupComboBox1: TEdit
+        Left = 80
+        Top = 36
+        Width = 361
+        Height = 24
+        Color = clBtnFace
+        Enabled = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object Edit1: TEdit
+        Left = 8
+        Top = 36
+        Width = 63
+        Height = 24
+        TabStop = False
+        Enabled = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+      end
+      object BitBtn4: TBitBtn
+        Left = 49
+        Top = 38
+        Width = 20
+        Height = 21
+        Hint = 'Pesquisa Cliente'
+        Caption = '&P'
+        DragCursor = crHandPoint
+        TabOrder = 0
+        OnClick = BitBtn4Click
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000120B0000120B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+          5555555555555555555555555555555555555555555555555555555555555555
+          555555555555555555555555555555555555555FFFFFFFFFF555550000000000
+          55555577777777775F55500B8B8B8B8B05555775F555555575F550F0B8B8B8B8
+          B05557F75F555555575F50BF0B8B8B8B8B0557F575FFFFFFFF7F50FBF0000000
+          000557F557777777777550BFBFBFBFB0555557F555555557F55550FBFBFBFBF0
+          555557F555555FF7555550BFBFBF00055555575F555577755555550BFBF05555
+          55555575FFF75555555555700007555555555557777555555555555555555555
+          5555555555555555555555555555555555555555555555555555}
+        Margin = 1
+        NumGlyphs = 2
+      end
+    end
+  end
+end

@@ -1,0 +1,159 @@
+object frmSelecaoImpressao5: TfrmSelecaoImpressao5
+  Left = 218
+  Top = 168
+  Width = 402
+  Height = 241
+  ActiveControl = Essencia
+  AutoSize = True
+  BorderIcons = [biMaximize]
+  Caption = 'Sele'#231#227'o de Impre'#231#227'o'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 394
+    Height = 207
+    Align = alClient
+    TabOrder = 0
+    object frmSelecaoCapaTotalPeriodo: TBitBtn
+      Left = 144
+      Top = 160
+      Width = 80
+      Height = 40
+      Cursor = crHandPoint
+      Hint = 'Vizualiza Relat'#243'rio com os crit'#233'rios informados'
+      Caption = '&Vizualizar'
+      TabOrder = 0
+      TabStop = False
+      OnClick = frmSelecaoCapaTotalPeriodoClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333330000000
+        00003333377777777777333330FFFFFFFFF03FF3F7FFFF33FFF7003000000FF0
+        00F077F7777773F77737E00FBFBFB0FFFFF07773333FF7FF33F7E0FBFB00000F
+        F0F077F333777773F737E0BFBFBFBFB0FFF077F3333FFFF733F7E0FBFB00000F
+        F0F077F333777773F737E0BFBFBFBFB0FFF077F33FFFFFF733F7E0FB0000000F
+        F0F077FF777777733737000FB0FFFFFFFFF07773F7F333333337333000FFFFFF
+        FFF0333777F3FFF33FF7333330F000FF0000333337F777337777333330FFFFFF
+        0FF0333337FFFFFF7F37333330CCCCCC0F033333377777777F73333330FFFFFF
+        0033333337FFFFFF773333333000000003333333377777777333}
+      NumGlyphs = 2
+    end
+    object BitBtn2: TBitBtn
+      Left = 224
+      Top = 160
+      Width = 80
+      Height = 40
+      Cursor = crHandPoint
+      Hint = 'Imprime Relat'#243'rio sem vizualizar'
+      Caption = '&Imprimir'
+      TabOrder = 1
+      TabStop = False
+      OnClick = BitBtn2Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000130B0000130B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00300000000000
+        00033FFFFFFFFFFFFFFF0888888888888880777777777777777F088888888888
+        8880777777777777777F0000000000000000FFFFFFFFFFFFFFFF0F8F8F8F8F8F
+        8F80777777777777777F08F8F8F8F8F8F9F0777777777777777F0F8F8F8F8F8F
+        8F807777777777777F7F0000000000000000777777777777777F3330FFFFFFFF
+        03333337F3FFFF3F7F333330F0000F0F03333337F77773737F333330FFFFFFFF
+        03333337F3FF3FFF7F333330F00F000003333337F773777773333330FFFF0FF0
+        33333337F3FF7F3733333330F08F0F0333333337F7737F7333333330FFFF0033
+        33333337FFFF7733333333300000033333333337777773333333}
+      NumGlyphs = 2
+    end
+    object BitBtn3: TBitBtn
+      Left = 304
+      Top = 160
+      Width = 80
+      Height = 40
+      Cursor = crHandPoint
+      Hint = 'Fecha formulario'
+      Caption = '&Retornar'
+      TabOrder = 2
+      TabStop = False
+      OnClick = BitBtn3Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        33333333333333333333333333333333333333333333333333FF333333333333
+        3000333333FFFFF3F77733333000003000B033333777773777F733330BFBFB00
+        E00033337FFF3377F7773333000FBFB0E000333377733337F7773330FBFBFBF0
+        E00033F7FFFF3337F7773000000FBFB0E000377777733337F7770BFBFBFBFBF0
+        E00073FFFFFFFF37F777300000000FB0E000377777777337F7773333330BFB00
+        000033333373FF77777733333330003333333333333777333333333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333}
+      NumGlyphs = 2
+    end
+    object RGGrafico: TRadioGroup
+      Left = 8
+      Top = 88
+      Width = 377
+      Height = 57
+      Caption = 'Classifica'#231#227'o dos Registros'
+      Color = clBtnFace
+      Columns = 2
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ItemIndex = 0
+      Items.Strings = (
+        'Fornecedor'
+        'Data Entrada')
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 3
+    end
+    object GroupBox2: TGroupBox
+      Left = 8
+      Top = 8
+      Width = 377
+      Height = 73
+      Caption = 'Ess'#234'ncia'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      object Essencia: TDBLookupComboBox
+        Left = 16
+        Top = 24
+        Width = 345
+        Height = 26
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Courier New'
+        Font.Style = []
+        KeyField = 'ESSENCIA'
+        ListField = 'ESSENCIA'
+        ListSource = DM.DQEssencia
+        ParentFont = False
+        TabOrder = 0
+      end
+    end
+  end
+end
